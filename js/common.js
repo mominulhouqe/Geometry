@@ -28,7 +28,31 @@ function calculateArea(){
 
 
 
+// Displaying Area Calculation 
 
+// document.getElementById('triangel-btnf').addEventListener('click', function(){
+// /*   const areaCalculateField = document.getElementById('all-field');
+//   const areaCalculateValue = areaCalculateField.innerText;
+//   console.log(areaCalculateValue); */
+
+//   // const areaValues = document.getElementById('type-number');
+//   // const areaValue = areaValues.value;
+
+//   // const setValues = document.getElementById('area1');
+//   // const noValue = document.getElementById('pin-fail');
+
+//   // if(areaValue === areaCalculateValue){
+     
+//   //   setValues.style.display = 'block';
+//   //     noValue.style.display = 'none';
+//   // }
+//   // else{
+    
+//   //     noValue.style.display = 'block';
+//   //     setValues.style.display = 'none';
+//   // }
+
+// })
 
 
 
