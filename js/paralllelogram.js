@@ -21,4 +21,4 @@ function calculateParallelGramArea() {
  document.getElementById('paralleloGram-btn').addEventListener('click' , function(){
     calculateParallelGramArea();
  })
-  
+ changeBackgroundOnHover('param-bg');

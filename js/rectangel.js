@@ -24,3 +24,6 @@ function calculateRectangularArea() {
     calculateRectangularArea();
  })
   
+
+ 
+ changeBackgroundOnHover('rectangel-bg');

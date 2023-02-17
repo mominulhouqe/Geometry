@@ -25,3 +25,4 @@
     calculateTriangleArea();
  })
   
+ changeBackgroundOnHover('triangel-bg');
