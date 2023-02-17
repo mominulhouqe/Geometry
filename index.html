@@ -95,16 +95,16 @@
                             <a href="#" id="pentagon-btn" class="btn btn-primary px-5">Calculate</a>
                         </div>
                     </div>
-                    <div class="card col-lg-3 text-center m-1 p-2 " style="width: 18rem;">
+                    <div id="ellipse-bg" class="card col-lg-3 text-center m-1 p-2 " style="width: 18rem;">
                         <img src="images/ellipse.png" class="card-img-top" alt="...">
                         <div class="card-body text-center ">
                             <h5 class="card-title fw-bold">Ellipse</h5>
                             <p class="card-text">Area[A] = pi * a * b</p>
                             <div class="d-flex mb-3">
-                                <input class="w-50" type="text" placeholder="a ="> cm
-                                <input class="w-50" type="text" placeholder="b ="> cm
+                                <input id="ellips-width-input" class="w-50" type="text" placeholder="a ="> cm
+                                <input id="ellips-length-input" class="w-50" type="text" placeholder="b ="> cm
                             </div>
-                            <a href="#" class="btn btn-primary px-5">Calculate</a>
+                            <a href="#" id="ellipse-btn" class="btn btn-primary px-5">Calculate</a>
                         </div>
                     </div>
 
@@ -146,7 +146,7 @@
                     </div>
                     <div class="area bg-light  py-3 p-1 d-flex gap-4">
                         <p>6.Ellipse</p>
-                        <p> <span id="">12</span>cm <sup>2</sup> </p>
+                        <p> <span id="ellipse-area-result">00</span>cm <sup>2</sup> </p>
                         <p class="bg-primary p-2 rounded  text-white">convert m <sup>2</sup></p>
                     </div>
 
@@ -178,6 +178,7 @@
     <script src="js/rhombos.js"></script>
     <script src="js/pentagon"></script>
     <script src="js/pentagon.js"></script>
+    <script src="js/ellips.js"></script>
     <!-- bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"

@@ -16,11 +16,10 @@ function calculateArea(){
 } */
 
 function changeBackgroundOnHover(elementId) {
-    const element = document.getElementById(elementId);
-  
-    element.addEventListener('mouseover', () => {
-      const randomColor = Math.floor(Math.random() * 16777215).toString(16);
-      element.style.backgroundColor = '#' + randomColor;
-    });
-  }
-  
+  const element = document.getElementById(elementId);
+
+  element.addEventListener('mouseover', () => {
+    const randomColor = Math.floor(Math.random() * 16777215).toString(16);
+    element.style.backgroundColor = '#' + randomColor;
+  });
+}

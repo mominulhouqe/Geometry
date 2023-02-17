@@ -22,5 +22,5 @@ function calculatePentagon() {
  document.getElementById('pentagon-btn').addEventListener('click' , function(){
     calculatePentagon();
  })
-
+ 
  changeBackgroundOnHover('pentagon-bg');
