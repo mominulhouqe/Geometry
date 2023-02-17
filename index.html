@@ -37,13 +37,13 @@
                     <div class="card col-lg-3 text-center m-1 p-2 bg-success" style="width: 18rem;">
                         <img src="images/triangle.png" class="card-img-top" alt="...">
                         <div class="card-body text-center text-white">
-                            <h5 class="card-title">Triangle</h5>
+                            <h5 class="card-title fw-bold">Triangle</h5>
                             <p class="card-text">Area[A] = 0.5 * b * h</p>
                             <div class="d-flex mb-3">
-                                <input class="w-50" type="text" placeholder="b ="> cm
-                                <input class="w-50" type="text" placeholder="h ="> cm
+                                <input id="triangel-base-input" class="w-50" type="text" placeholder="b ="> cm
+                                <input id="triangel-hieght-input" class="w-50" type="text" placeholder="h ="> cm
                             </div>
-                            <a href="#" class="btn btn-primary px-5">Calculate</a>
+                            <a href="#" id="triangel-btn" class="btn btn-primary px-5">Calculate</a>
                         </div>
                     </div>
                     <div class="card col-lg-3 text-center m-1 p-2 " style="width: 18rem;">
@@ -53,10 +53,10 @@
                             <h5 class="card-title fw-bold">Rectangle</h5>
                             <p class="card-text">Area (A) = w * l</p>
                             <div class="d-flex mb-3">
-                                <input class="w-50" type="text" placeholder="w ="> cm
-                                <input class="w-50" type="text" placeholder="l ="> cm
+                                <input id="rectangular-width-input" class="w-50" type="text" placeholder="w ="> cm
+                                <input id="rectangular-length-input" class="w-50" type="text" placeholder="l ="> cm
                             </div>
-                            <a href="#" class="btn btn-primary px-5">Calculate</a>
+                            <a href="#" id="rectangular-area-result" class="btn btn-primary px-5">Calculate</a>
                         </div>
                     </div>
                     <div class="card col-lg-3 text-center m-1 p-2 " style="width: 18rem;">
@@ -114,27 +114,27 @@
                     <h2 class="text-center fw-bold ">Area Calculation</h2>
                     <div class="area bg-light  py-3 p-1 d-flex gap-4">
                         <p>1.Triangel</p>
-                        <p> <span id="">12</span>cm <sup>2</sup> </p>
+                        <p> <span id="triangle-area-result">00</span>cm <sup>2</sup> </p>
                         <p class="bg-primary p-2 rounded  text-white">convert m <sup>2</sup></p>
                     </div>
                     <div class="area bg-light  py-3 p-1 d-flex gap-4">
                         <p>2.Rectangle</p>
-                        <p> <span id="">12</span>cm <sup>2</sup> </p>
+                        <p> <span id="">00</span>cm <sup>2</sup> </p>
                         <p class="bg-primary p-2 rounded  text-white">convert m <sup>2</sup></p>
                     </div>
                     <div class="area bg-light  py-3 p-1 d-flex gap-3">
                         <p>3.Parallelogram</p>
-                        <p> <span id="">12</span>cm <sup>2</sup> </p>
+                        <p> <span id="">00</span>cm <sup>2</sup> </p>
                         <p class="bg-primary p-2 rounded  text-white">convert m <sup>2</sup></p>
                     </div>
                     <div class="area bg-light  py-3 p-1 d-flex gap-4">
                         <p>4.Rhombus</p>
-                        <p> <span id="">12</span>cm <sup>2</sup> </p>
+                        <p> <span id="">00</span>cm <sup>2</sup> </p>
                         <p class="bg-primary p-2 rounded  text-white">convert m <sup>2</sup></p>
                     </div>
                     <div class="area bg-light  py-3 p-1 d-flex gap-4">
                         <p>5.Pentagon</p>
-                        <p> <span id="">12</span>cm <sup>2</sup> </p>
+                        <p> <span id="">00</span>cm <sup>2</sup> </p>
                         <p class="bg-primary p-2 rounded  text-white">convert m <sup>2</sup></p>
                     </div>
                     <div class="area bg-light  py-3 p-1 d-flex gap-4">
@@ -160,15 +160,9 @@
 
 
 
-
-
-
-
-
-
-
     <!-- js file -->
     <script src="js/index.js"></script>
+    <script src="js/rectangel.js"></script>
     <!-- bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
