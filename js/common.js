@@ -15,6 +15,25 @@ function calculateArea(){
 
 } */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Background Color Changer 
 function changeBackgroundOnHover(elementId) {
   const element = document.getElementById(elementId);
 
@@ -23,3 +42,9 @@ function changeBackgroundOnHover(elementId) {
     element.style.backgroundColor = '#' + randomColor;
   });
 }
+
+
+// blog here 
+document.getElementById('blog').addEventListener('click', function(){
+  window.location.href = 'blog.html'
+})

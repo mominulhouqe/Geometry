@@ -9,7 +9,8 @@ function calculateEllipse() {
     const ellipseLengthField = document.getElementById('ellips-length-input');
     const ellipseLengthFieldString = ellipseLengthField.value;
     const ellipseLengthFieldValue = parseFloat(ellipseLengthFieldString);
-  
+
+
     const rectangelTotal = 3.1416 * ellipsBaseInputFieldValue * ellipseLengthFieldValue;
 
   
@@ -18,6 +19,8 @@ function calculateEllipse() {
     let resultElementValue = parseFloat(resultElementString);
 
     resultElement.innerText = rectangelTotal.toFixed(1);
+
+
   }
   
  document.getElementById('ellipse-btn').addEventListener('click' , function(){
