@@ -28,9 +28,11 @@ function calculateTriangleArea() {
   const triangleArea = 0.5 * triangleBaseInputField * triangleHeightInputField;
 
   const resultElement = document.getElementById('triangle-area-result');
+  
   const resultElementString = resultElement.innerText;
   let resultElementValue = parseFloat(resultElementString);
-  resultElement.innerText = triangleArea.toFixed(1);
+
+  resultElement.innerText = triangleArea.toFixed(2);
 }
 
  document.getElementById('triangel-btn').addEventListener('click' , function(){

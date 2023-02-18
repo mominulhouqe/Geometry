@@ -10,7 +10,7 @@ function calculatePentagon() {
     const resultElementString = resultElement.innerText;
     let resultElementValue = parseFloat(resultElementString);
 
-    resultElement.innerText = rectangelTotal.toFixed(1);
+    resultElement.innerText = rectangelTotal.toFixed(2);
 
   }
  document.getElementById('pentagon-btn').addEventListener('click' , function(){
