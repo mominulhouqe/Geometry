@@ -1,58 +1,19 @@
 
-/* 
-function  calculator(elementId){
-    const areaCalculate = document.getElementById(elementId);
-    const areaCalculateString = areaCalculate.value;
-    const areaCalculateValue = parseFloat(areaCalculateString);
 
-    return areaCalculateValue;
+
+
+
+// Area Field Calculation Value 
+function getAreaValue(inputField) {
+
+  const getInputField = document.getElementById(inputField);
+  const getInputFieldString = getInputField.value;
+  const getInputFieldValue = parseFloat(getInputFieldString);
+  getInputField.value = '';
+  return getInputFieldValue;
+
 }
 
-function calculateArea(){
-
-    const triangel = calculator('triangel-base-input')
-    const rectangel = calculator('rectangular-area-result')
-
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Displaying Area Calculation 
-
-// document.getElementById('triangel-btnf').addEventListener('click', function(){
-// /*   const areaCalculateField = document.getElementById('all-field');
-//   const areaCalculateValue = areaCalculateField.innerText;
-//   console.log(areaCalculateValue); */
-
-//   // const areaValues = document.getElementById('type-number');
-//   // const areaValue = areaValues.value;
-
-//   // const setValues = document.getElementById('area1');
-//   // const noValue = document.getElementById('pin-fail');
-
-//   // if(areaValue === areaCalculateValue){
-     
-//   //   setValues.style.display = 'block';
-//   //     noValue.style.display = 'none';
-//   // }
-//   // else{
-    
-//   //     noValue.style.display = 'block';
-//   //     setValues.style.display = 'none';
-//   // }
-
-// })
 
 
 
@@ -61,7 +22,7 @@ function calculateArea(){
 function changeBackgroundOnHover(elementId) {
   const element = document.getElementById(elementId);
 
-  element.addEventListener('mouseover', () => {
+  element.addEventListener('mouseover', function () {
     const randomColor = Math.floor(Math.random() * 16777215).toString(16);
     element.style.backgroundColor = '#' + randomColor;
   });
@@ -69,6 +30,27 @@ function changeBackgroundOnHover(elementId) {
 
 
 // blog here 
-document.getElementById('blog').addEventListener('click', function(){
-  window.location.href = 'blog.html'
+document.getElementById('blog').addEventListener('click', function () {
+  window.location.href = 'blog.html';
 })
+
+
+
+//  const inputField = document.getElementById('inputField');
+const calculateBtn = document.getElementById('triangel-btn');
+const outputDiv = document.getElementById('output');
+
+calculateBtn.addEventListener('click', () => {
+  // const inputValue =calculateBtn.value;
+  // const result = inputValue * 2; // perform some calculation
+  
+  // const newElement = document.createElement('p'); // create new element
+  const textNode = document.createElement('div'); // create text node with output value
+  outputDiv.appendChild(textNode); // append text node to new element
+  // outputDiv.appendChild(newElement); // append new element to output div
+  
+  // display the result
+  outputDiv.style.display = 'block';
+});
+
+

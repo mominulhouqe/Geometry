@@ -2,16 +2,11 @@
 
 function calculateEllipse() {
 
-    const ellipsBaseInputField = document.getElementById('ellips-width-input');
-    const ellipsBaseInputFieldString = ellipsBaseInputField.value;
-    const ellipsBaseInputFieldValue = parseFloat  (ellipsBaseInputFieldString);
-  
-    const ellipseLengthField = document.getElementById('ellips-length-input');
-    const ellipseLengthFieldString = ellipseLengthField.value;
-    const ellipseLengthFieldValue = parseFloat(ellipseLengthFieldString);
+    const ellipsBaseInputField = getAreaValue('ellips-width-input');
 
+    const ellipseLengthField = getAreaValue('ellips-length-input');
 
-    const rectangelTotal = 3.1416 * ellipsBaseInputFieldValue * ellipseLengthFieldValue;
+    const rectangelTotal = 3.1416 * ellipsBaseInputField * ellipseLengthField;
 
   
     const resultElement = document.getElementById('ellipse-area-result');

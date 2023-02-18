@@ -1,13 +1,10 @@
 function calculateParallelGramArea() {
-    const paralleloGramHieghtInputField = document.getElementById('parallelo-width-input');
-    const paralleloGramHieghtInputFieldString = paralleloGramHieghtInputField.value;
-    const paralleloGramHieghtInputFieldValue = parseFloat(paralleloGramHieghtInputFieldString);
-  
-    const paralleloGramLengthField = document.getElementById('parallelo-length-input');
-    const paralleloGramLengthFieldString = paralleloGramLengthField.value;
-    const paralleloGramLengthFieldValue = parseFloat(paralleloGramLengthFieldString);
-  
-    const rectangelTotal = paralleloGramHieghtInputFieldValue * paralleloGramLengthFieldValue;
+
+    const paralleloGramHieghtInputField = getAreaValue('parallelo-width-input');
+    
+    const paralleloGramLengthField = getAreaValue('parallelo-length-input');
+   
+    const rectangelTotal = paralleloGramHieghtInputField * paralleloGramLengthField;
 
   
     const resultElement = document.getElementById('paralleloGram-area-result');
